@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #064420; /* verde tavolo */
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #1b4332;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #40916c;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.selected {
+  border: 2px solid blue;
+  transform: translateY(-5px);
+}
+
+.table-combo {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  border: 2px dashed white;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
